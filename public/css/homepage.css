@@ -1,0 +1,467 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+.paars {
+  color: #7662b7;
+}
+
+/* landPage begin */
+svg {
+  width: 140px;
+  height: 140px;
+  margin-top: -43px;
+  margin-left: 48px;
+  position: fixed;
+  z-index: 110;
+}
+
+nav {
+  padding: 0 !important;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.nav-item {
+  text-transform: uppercase;
+}
+
+.navbar-nav {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 110px;
+  position: fixed;
+  z-index: 100;
+}
+.projectenLink {
+  margin-left: 1180px;
+  margin-right: 20px;
+  margin-top: 57px;
+  font-size: 22px;
+  font-weight: 440;
+}
+
+.contactLink {
+  margin-left: 20px;
+  margin-top: 57px;
+  font-size: 22px;
+  font-weight: 440;
+}
+
+.scroll {
+  border: 2.2px solid black;
+  width: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 49.5%;
+  margin-top: 180px;
+}
+#header {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(../img/groepsfoto.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 117vh;
+}
+.fa-circle {
+  font-size: 6px;
+}
+
+.titel h1 {
+  font-size: 70px;
+  font-weight: 600;
+  margin-top: 280px;
+}
+.titel h3 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+.titel a {
+  background-color: white;
+  padding: 4px 7px;
+  color: black;
+  text-decoration: none;
+}
+
+.titel .borderRadiant {
+  max-width: 168.5px;
+  padding: 0.35rem 0.4rem !important;
+  border-radius: 8px;
+  position: relative;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(202, 175, 255, 1) 0%,
+    rgba(202, 175, 255, 1) 46%,
+    rgba(126, 90, 199, 1) 100%
+  );
+  padding: 3px;
+}
+.titel .borderRadiant:hover {
+  animation: popup 0.7s;
+}
+@keyframes popup {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  60% {
+    transform: scale(1.08);
+  }
+  70% {
+    transform: scale(1.17);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.titel {
+  margin-left: 50px;
+}
+.cover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(255, 255, 255) 0%,
+    rgba(251, 252, 252, 1) 46%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  width: 100%;
+  height: 162vh;
+  margin-top: -100vh;
+  z-index: 10;
+}
+/* landPage end */
+
+/* about begin */
+#about {
+  margin-top: -434px;
+  background: url(../img/wave.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 150vh;
+  z-index: -2;
+}
+.waveAboutImg img {
+  width: 550px;
+  height: 320px;
+  z-index: 10;
+  position: relative;
+}
+.gridAbout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.waveAbout {
+  text-align: left;
+  color: white;
+  padding-top: 525px;
+  width: 600px;
+}
+.waveAboutImg {
+  padding-top: 497px;
+  margin-left: 130px;
+}
+.waveAbout h2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.waveAbout {
+  width: 610px;
+  line-height: 28px;
+}
+.overlayAbout {
+  background-color: white;
+  width: 550px;
+  height: 320px;
+  position: absolute;
+  transform: rotate(-3deg);
+  z-index: 1;
+}
+.floatingTrans {
+  background: url(../img/aboutText.png);
+  height: 450px;
+  width: 85px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.3;
+  margin-left: 1285px;
+  margin-top: 440px;
+}
+
+/* about end */
+
+/* kernwaardes begin */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 3em;
+  margin-left: 50px;
+  margin-bottom: 200px;
+}
+.kernwaarde {
+  background-color: transparent;
+  width: 300px;
+  height: 180px;
+  perspective: 1000px;
+}
+
+.kernwaarde-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.kernwaarde:hover .kernwaarde-inner {
+  transform: rotateY(180deg);
+}
+
+.kernwaarde-front,
+.kernwaarde-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.kernwaarde-front {
+  background-color: #fff;
+  color: black;
+}
+
+.kernwaarde-back {
+  background-color: #ffffff;
+  color: black;
+  transform: rotateY(180deg);
+  align-items: center;
+}
+
+.kernwaarde-back p {
+  font-size: 16px;
+  padding: 7px 12px;
+  line-height: 30px;
+}
+.infoHover {
+  position: absolute;
+  margin-left: -143px;
+  margin-top: 35px;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+  color: #a3e52e;
+}
+.kernwaarde-front img {
+  margin-top: 13px;
+  width: 70px;
+  height: auto;
+}
+.betrokkenIcon {
+  width: 70px !important;
+  height: auto;
+}
+.betrouwbaarIcon {
+  width: 70px !important;
+  height: auto;
+}
+.kernwaarde-front h2 {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.titelKernwaardes {
+  text-align: center;
+  margin-bottom: 55px;
+  margin-top: 50px;
+}
+.titelKernwaardes h4 {
+  margin-top: -10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+#kernpunten {
+  margin-top: -110px;
+}
+.grayWave {
+  background: url(../img/wave-gray.png);
+  width: 100%;
+  height: 80vh;
+  margin-top: -570px;
+}
+/* kernwaardes end */
+
+/* projecten begin */
+#projecten {
+  background: url(../img/gray2.png);
+  width: 100%;
+  height: 250vh;
+  margin-top: -100px;
+  margin-bottom: 200px;
+}
+
+.projecten h2 {
+  padding-top: 300px;
+  text-align: center;
+  margin-left: -50px;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+}
+
+.projects h3:hover {
+  text-decoration: none;
+  color: #a3e52e;
+  transition: 0.3s ease-in-out;
+}
+.gridProj a:hover {
+  text-decoration: none;
+}
+
+.gridProj {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 4em;
+  grid-column-gap: 1em;
+}
+.projects {
+  text-align: center;
+  /* background: #7662B7; */
+}
+.projects h3 {
+  margin-top: 15px;
+  color: #7662b7;
+}
+.projects h3 {
+  text-decoration: none;
+  color: #7662b7;
+}
+
+.projects img {
+  width: 600px;
+  height: 593px;
+}
+.projects p {
+  margin-top: -5px;
+  color: #2d5626;
+  font-weight: 500;
+}
+/* projecten end */
+
+/* begin promovid */
+.promo {
+  text-align: center;
+}
+#promo {
+  margin-bottom: 100px;
+}
+.promoTitel {
+  letter-spacing: 1.6px;
+  margin-bottom: 25px;
+}
+.promoTitel h2 {
+  font-weight: 500;
+}
+
+/* end promovid */
+
+/* footer begin */
+#footer {
+  background: #7662b7;
+  width: 100%;
+  z-index: -2;
+  padding: 10px;
+
+  
+}
+.innerFooter h2,
+.innerFooter2 h2 {
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.innerFooter {
+  color: white;
+  z-index: 10;
+  /* margin-top: 47%; */
+  margin-left: 75%;
+}
+.innerFooter2 {
+  color: white;
+  z-index: 10;
+  /* margin-top: 47%; */
+  margin-left: 55px;
+}
+.gridFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 5%;
+  font-family: "Montserrat", sans-serif;
+}
+.footerLogo {
+  width: 173px;
+  height: auto;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+/* footer end */
+
+/* media begin */
+@media screen and (max-width: 768px) {
+  html {
+    width: 341%;
+  }
+  .paars {
+    margin-top: 33%;
+  }
+  svg {
+    display: none;
+  }
+  .waveAboutImg {
+    padding-top: 353px;
+    margin-left: 98px;
+  }
+  .titel h1 {
+    margin-top: 97px;
+}
+.waveAbout {
+  padding-top: 393px;
+
+}
+/* #footer {
+
+  width: 96%;
+  height: 83vh;
+  
+ 
+} */
+}
+/* media end */
